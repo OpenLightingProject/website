@@ -1,4 +1,1 @@
-website
-=======
-
-Code for the www.openlighting.org site
+Code for the www.openlighting.org site. 
