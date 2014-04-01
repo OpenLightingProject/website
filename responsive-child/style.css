@@ -184,7 +184,7 @@ th {
   background-color: #8d4;
   }
 
-.build-failure, .failed-make, .failed-make-check {
+.build-failure, .failed-configure, .failed-configure-make, .failed-make, .failed-make-check {
   background-color: #e88;
   }
 
@@ -227,7 +227,23 @@ th {
   }
 
 
+.openbsd {
+  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/openbsd.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+  }
 
+.freebsd {
+  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/freebsd.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+  }
+
+.netbsd {
+  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/netbsd.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+  }
 
 /* =Top Menu
 -------------------------------------------------------------- */
