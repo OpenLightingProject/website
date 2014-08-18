@@ -15,7 +15,7 @@ Template:	responsive
 .class
 #id
 
-background-image: url('http://staging.openlighting.org/wp-content/uploads/2013/12/dust.png');
+background-image: url('http://www.openlighting.org/wp-content/uploads/2013/12/dust.png');
 
 */
 
@@ -188,6 +188,14 @@ th {
   background-color: #e88;
   }
 
+.warnings-shell {
+  background-color: #fa3;
+  }
+
+.retry-exception-slave-lost {
+  background-color: #c6c;
+  }
+
 .building {
   background-color: #fd3;
   }
@@ -256,7 +264,7 @@ th {
   }
 
 /* fixed-position top menu. Removing for now because it looks stupid.
-  background-image: url('http://staging.openlighting.org/wp-content/uploads/2013/12/grid.png');
+  background-image: url('http://www.openlighting.org/wp-content/uploads/2013/12/grid.png');
   position: fixed;
   right: 8em;
   z-index: 3;
@@ -284,5 +292,5 @@ th {
 
 .top-menu li a:hover {
 	color: rgb(255, 78, 0);
-  background-image: url('http://staging.openlighting.org/wp-content/uploads/2013/12/grid.png');
+  background-image: url('http://www.openlighting.org/wp-content/uploads/2013/12/grid.png');
 }
