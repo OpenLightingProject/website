@@ -188,6 +188,14 @@ th {
   background-color: #e88;
   }
 
+.warnings-shell {
+  background-color: #fa3;
+  }
+
+.retry-exception-slave-lost {
+  background-color: #c6c;
+  }
+
 .building {
   background-color: #fd3;
   }
