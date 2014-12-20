@@ -71,12 +71,12 @@ if( !defined( 'ABSPATH' ) ) {
   
   <?php  $openlighting_url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']; 
 	 if (false !== strpos($openlighting_url,'ola/')) {
-    $openlighting_header_image = 'http://www.openlighting.org/wp-content/uploads/2014/03/72px_OLA-Logo.png';
+    $openlighting_header_image = '/wp-content/uploads/2014/03/72px_OLA-Logo.png';
 	} elseif (false !== strpos($openlighting_url,'libartnet-main/')) {
-    $openlighting_header_image = 'http://www.openlighting.org/wp-content/uploads/2014/03/72px_libartnetlogo.png';
+    $openlighting_header_image = '/wp-content/uploads/2014/03/72px_libartnetlogo.png';
   } elseif (false !== strpos($openlighting_url,'rdm-tools/')) {
-    $openlighting_header_image = 'http://www.openlighting.org/wp-content/uploads/2014/03/72px_dmx-rdm.png';
-  } else { $openlighting_header_image = 'http://www.openlighting.org/wp-content/uploads/2014/03/72px_openlightingprojectlogo.png';
+    $openlighting_header_image = '/wp-content/uploads/2014/03/72px_dmx-rdm.png';
+  } else { $openlighting_header_image = '/wp-content/uploads/2014/03/72px_openlightingprojectlogo.png';
          }
 
 ?>
