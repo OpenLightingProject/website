@@ -4,11 +4,8 @@ Description:	Responsive theme modified with per-page custom menus
 Template:	responsive
 */
 
-/* TODO: Move into fonts.css */
-@import url(/wp-content/themes/responsive-child/Oswald.css);
-@import url(/wp-content/themes/responsive-child/OpenSans.css);
-@import url(/wp-content/themes/responsive-child/Roboto.css);
-@import url(/wp-content/themes/responsive-child/RobotoCondensed.css);
+
+@import url(/wp-content/themes/responsive-child/fonts.css);
 @import url ../responsive/style.css;
 
 
