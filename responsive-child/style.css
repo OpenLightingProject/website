@@ -4,7 +4,8 @@ Description:	Responsive theme modified with per-page custom menus
 Template:	responsive
 */
 
-@import url(http://openlighting.org/wp-content/themes/responsive-child/Oswald.css);
+/* TODO: Move into fonts.css */
+@import url(/wp-content/themes/responsive-child/Oswald.css);
 @import url(/wp-content/themes/responsive-child/OpenSans.css);
 @import url(/wp-content/themes/responsive-child/Roboto.css);
 @import url(/wp-content/themes/responsive-child/RobotoCondensed.css);
@@ -205,50 +206,50 @@ th {
   }
 
 .mavericks {
-  background-image: url('http://openlighting.org/wp-content/uploads/2013/12/mac.png');
+  background-image: url('/wp-content/uploads/2013/12/mac.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .debian {
-  background-image: url('http://openlighting.org/wp-content/uploads/2013/12/debian.png');
+  background-image: url('/wp-content/uploads/2013/12/debian.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .arch {
-  background-image: url('http://openlighting.org/wp-content/uploads/2013/12/arch.png');
+  background-image: url('/wp-content/uploads/2013/12/arch.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .ubuntu {
-  background-image: url('http://openlighting.org/wp-content/uploads/2013/12/ubuntu.png');
+  background-image: url('/wp-content/uploads/2013/12/ubuntu.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .gentoo {
-  background-image: url('http://openlighting.org/wp-content/uploads/2013/12/gentoo.png');
+  background-image: url('/wp-content/uploads/2013/12/gentoo.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 
 .openbsd {
-  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/openbsd.png');
+  background-image: url('/wp-content/uploads/2014/03/openbsd.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .freebsd {
-  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/freebsd.png');
+  background-image: url('/wp-content/uploads/2014/03/freebsd.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
 
 .netbsd {
-  background-image: url('http://openlighting.org/wp-content/uploads/2014/03/netbsd.png');
+  background-image: url('/wp-content/uploads/2014/03/netbsd.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
@@ -292,5 +293,5 @@ th {
 
 .top-menu li a:hover {
 	color: rgb(255, 78, 0);
-  background-image: url('http://www.openlighting.org/wp-content/uploads/2013/12/grid.png');
+  background-image: url('/wp-content/uploads/2013/12/grid.png');
 }
