@@ -292,3 +292,31 @@ th {
 	color: rgb(255, 78, 0);
   background-image: url('/wp-content/uploads/2013/12/grid.png');
 }
+
+/*------ Mailchimp form styling ------ */
+
+.mc4wp-form input[type="text"] {
+    width: 30%;
+}
+
+.mc4wp-form input[type="email"] {
+    width: 30%;
+}
+
+.mc4wp-form input[type="checkbox"] {
+    margin-left: 25px;
+}
+
+
+.mc4wp-form input[type="submit"] {
+  border: 1px solid #115290;
+  color: #FFF;
+  background-color: #1874CD;
+  background-image: -moz-linear-gradient(center top , #4F9EEA, #1874CD);
+  text-shadow: 0px -1px 0px #115290;
+  border-radius: 2px;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
+  display: block;
+  width: 140px;
+  height:40px
+}
