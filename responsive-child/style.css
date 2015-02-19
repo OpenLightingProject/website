@@ -312,7 +312,7 @@ th {
   border: 1px solid #115290;
   color: #FFF;
   background-color: #1874CD;
-  background-image: -moz-linear-gradient(center top , #4F9EEA, #1874CD);
+  background-image: linear-gradient(to bottom , #4F9EEA, #1874CD);
   text-shadow: 0px -1px 0px #115290;
   border-radius: 2px;
   box-shadow: 0px 1px 0px rgba(255,255,255,0.3);
