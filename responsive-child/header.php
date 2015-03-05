@@ -76,8 +76,9 @@ if( !defined( 'ABSPATH' ) ) {
     $openlighting_header_image = '/wp-content/uploads/2014/03/72px_libartnetlogo.png';
   } elseif (false !== strpos($openlighting_url,'rdm-tools/')) {
     $openlighting_header_image = '/wp-content/uploads/2014/03/72px_dmx-rdm.png';
-  } else { $openlighting_header_image = '/wp-content/uploads/2014/03/72px_openlightingprojectlogo.png';
-         }
+  } else { 
+    $openlighting_header_image = '/wp-content/uploads/2015/03/Project-Logo-Web1.png';
+  }
 
 ?>
   
