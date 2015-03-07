@@ -190,7 +190,7 @@ th {
   background-color: #fa3;
   }
 
-.retry-exception-slave-lost {
+.retry-exception-slave-lost, .exception-git {
   background-color: #c6c;
   }
 
