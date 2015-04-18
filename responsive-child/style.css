@@ -182,7 +182,7 @@ th {
   background-color: #8d4;
   }
 
-.build-failure, .failed-configure, .failed-configure-make, .failed-make, .failed-make-check {
+.build-failure, .failed-configure, .failed-configure-make, .failed-make, .failed-make-check, .failed-make-doxygen-doc {
   background-color: #e88;
   }
 
@@ -247,6 +247,12 @@ th {
 
 .netbsd {
   background-image: url('/wp-content/uploads/2014/03/netbsd.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+  }
+
+.mint {
+  background-image: url('/wp-content/uploads/2015/04/mint.png');
 	background-repeat: no-repeat;
 	background-position: 95% center;
   }
