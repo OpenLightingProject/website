@@ -1,1 +1,1 @@
-Static code for www.openlighting.org site and docs.openlighting.org.
+Static code for https://www.openlighting.org site and https://docs.openlighting.org.
