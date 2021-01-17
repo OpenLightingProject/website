@@ -22,6 +22,8 @@ Available from [multimedia:libs](https://build.opensuse.org/package/show/multime
     sudo zypper addrepo https://download.opensuse.org/repositories/multimedia:/libs/<VERSION> multimedia_libs
     sudo zypper install ola
 
+If this is the first time software is installed from multimedia:liba, you may need to accept their package signing key.
+
 ### Gentoo
 
 Gentoo packages are in progress [here](https://github.com/gentoo/gentoo/pull/15017).
@@ -39,7 +41,7 @@ or [Homebrew](https://formulae.brew.sh/formula/ola#default):
 Build from source
 -----------------
 
-TODO, probably as a separate page
+To stay on the bleeding edge with new and exciting features, [compile from source](compiling_from_source)
 
 Windows
 -------
