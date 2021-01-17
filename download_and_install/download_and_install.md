@@ -8,6 +8,8 @@ OLA is available pre-built on many platforms:
 
 ### Debian/Ubuntu (including Raspberry Pi)
 
+Raspberry Pi users may want to see the [Raspberry Pi Quick-Start Guide](ola_on_raspberry_pi)
+
 Ubuntu users will need the `universe` repository enabled.
 
     sudo apt-get update
