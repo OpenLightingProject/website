@@ -133,6 +133,8 @@ If you wish to build the Python library, additional libraries are required:
         numpy \
         protobuf
 
+If the pip3 command does not exist, install python3-pip from your package manager and try again.
+
 Build
 =====
 
