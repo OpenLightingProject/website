@@ -46,7 +46,7 @@ To stay on the bleeding edge with new and exciting features, [compile from sourc
 Windows
 -------
 
-OLA hasn’t been ported to Windows yet. In the meantime you can run
-[OLA on Windows with VMWare](https://www.openlighting.org/ola/tutorials/ola-on-windows-via-vmware/)
-
-TODO: VMWare is quite out of fashion, explore using VirtualBox or maybe even Docker.
+OLA is not presently available directly on Windows. However, it can be used inside a virtual machine. Because of the
+overhead of virtualization, there may be a small performance penalty. For show-critical uses, consider using a Linux
+system, such as a [Raspberry Pi](ola_on_raspberry_pi). If you wish to test OLA on your Windows PC, see
+the [VirtualBox instructions](virtualbox).
