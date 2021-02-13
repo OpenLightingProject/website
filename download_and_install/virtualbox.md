@@ -8,7 +8,7 @@ Downloads
 
 Download VirtualBox from [here](https://www.virtualbox.org/wiki/Downloads).
 
-Also download Debian from [here](https://www.debian.org/).
+Also download the latest Debian release from [here](https://www.debian.org/distrib/netinst).
 
 Setup Virtual Machine
 =====================
