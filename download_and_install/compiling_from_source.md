@@ -1,8 +1,9 @@
 Compiling From Source
 =====================
 
-OLA source code lives on [GitHub](https://github.com/OpenLightingProject/ola). Either download a source tarball or
-run `git clone https://github.com/OpenLightingProject/ola.git`.
+OLA source code lives on [GitHub](https://github.com/OpenLightingProject/ola).
+Stable releases are available from the [releases page](https://github.com/OpenLightingProject/ola/releases);
+for bleeding-edge development releases, run `git clone https://github.com/OpenLightingProject/ola.git`.
 
 Dependencies
 ============
@@ -11,7 +12,7 @@ You need a couple of libraries installed for everything to work correctly.
 
 First you’ll need at least the following:
 
-- [avahi](https://www.avahi.org) if you want discovery enabled.
+- [avahi](https://www.avahi.org) if you want to use network discovery.
 - [microhttpd](https://www.gnu.org/software/libmicrohttpd/) (if you want the web UI).
 - autoconf
 - automake
@@ -23,7 +24,7 @@ First you’ll need at least the following:
 - libtool
 - libusb
 - pkg-config
-- Protobuf [http://code.google.com/p/protobuf/](https://code.google.com/p/protobuf/) (version 3.6 or later)
+- [Protobuf](https://developers.google.com/protocol-buffers) (version 3.6 or later)
 - uuid or ossp uuid
 - yacc (or bison)
 - zlib
@@ -146,7 +147,7 @@ OLA uses autotools for building. Run
 
      ./configure --help
 
-to see all options. The most popular option is `--enable-python-libs` to build the Python Client Module. If you want to
+to see all options. The most popular option is `--enable-python-libs` to build the Python client module. If you want to
 use the RDM responder tests, add `--enable-rdm-tests`.
 
 Once you’ve decided on the options, it’s time to build OLA.
@@ -158,7 +159,7 @@ Once you’ve decided on the options, it’s time to build OLA.
 
 Mac users should run use `make -j$(sysctl -n hw.logicalcpu)` instead of `make -j$(nproc)`.
 
-Finally, run `sudo ldconfig`to make new libraries available.
+Finally, run `sudo ldconfig` to make new libraries available.
 
 Device drivers
 ==============
