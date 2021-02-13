@@ -2,10 +2,11 @@ OLA on Raspberry Pi
 ===================
 
 This tutorial describes how to get OLA running on the
-[Raspberry Pi](https://www.raspberrypi.org/). The procedure described here is designed to get OLA up and running as fast
-as possible. There is plenty of information on the [Raspberry Pi Docs](https://www.raspberrypi.org/documentation/).
+[Raspberry Pi](https://www.raspberrypi.org/). The procedure described here is designed to get OLA up and running as
+easily as possible. There is plenty of information on
+the [Raspberry Pi Docs](https://www.raspberrypi.org/documentation/).
 The [Raspberry Pi Forum](https://www.raspberrypi.org/forums/) is a good place to ask for help on Raspberry Pi specific
-issues.  
+issues.
 
 Getting Started
 ===============
@@ -15,7 +16,7 @@ See the official [setup guide](https://www.raspberrypi.org/documentation/setup/)
 - A monitor is not strictly required to use OLA, but one can be helpful for debugging purposes.
 - If you plan on using a USB DMX interface that does not use its own power supply, you will also need a powered USB hub.
   The Raspberry Pi hardware cannot supply enough power over USB to meet the needs of most USB DMX interfaces.
-- A wired network connection is required when using OLA with any network protocols. DMX over WiFi is not Wireless DMX.
+- A wired network connection is required when using OLA with any network protocols. Remember, DMX over WiFi is not Wireless DMX!
 
 Installation
 =============
