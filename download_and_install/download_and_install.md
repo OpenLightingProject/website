@@ -11,6 +11,7 @@ OLA is available pre-built on many platforms:
 Raspberry Pi users may want to see the [Raspberry Pi Quick-Start Guide](ola_on_raspberry_pi)
 
 Ubuntu users will need the `universe` repository enabled.
+See [here](https://help.ubuntu.com/community/Repositories/Ubuntu) for details.
 
     sudo apt-get update
     sudo apt-get install ola
@@ -22,11 +23,11 @@ Available from [multimedia:libs](https://build.opensuse.org/package/show/multime
     sudo zypper addrepo https://download.opensuse.org/repositories/multimedia:/libs/<VERSION> multimedia_libs
     sudo zypper install ola
 
-If this is the first time software is installed from multimedia:liba, you may need to accept their package signing key.
+If this is the first time software is installed from multimedia:libs, you may need to accept their package signing key.
 
 ### Gentoo
 
-Gentoo packages are in progress [here](https://github.com/gentoo/gentoo/pull/15017).
+Gentoo packages are in progress [here](https://github.com/gentoo/gentoo/pull/19420).
 
 ### macOS
 
