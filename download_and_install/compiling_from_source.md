@@ -228,15 +228,14 @@ Doxygen Documentation
 There is also an option to build the doxygen documentation! To do so, you will need to install
 [doxygen](http://www.doxygen.nl/manual/install.html) (available from package managers on all popular systems).
 
-Once you have installed Doxygen you may need to run ./configure in your ola directory, so that it can generate the
+Once you have installed Doxygen you may need to run `./configure` in your ola directory, so that it can generate the
 correct make file. To build the docs just use:
 
      make doxygen-doc
 
-You’ll have to run a webserver to get the experience. A simple way to do this is to navigate to open-lighting/html and
+You’ll have to run a webserver to get the experience. A simple way to do this is to navigate to `open-lighting/html` and
 run:
 
-     python -m SimpleHTTPServer
+     python3 -m http.server 8000 --bind 127.0.0.1
 
-This opens a web server at your local IP address on port 8000. It can be accessed through 127.0.0.1:80000 on your local
-machine as well.
+This starts a web server at http://127.0.0.1:8000.
