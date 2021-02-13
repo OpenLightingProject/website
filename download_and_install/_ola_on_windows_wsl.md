@@ -1,12 +1,13 @@
 OLA on Windows
 ==============
 
-OLA is not presently available directly on Windows. However, it can be used with a shim. Note these
-installations are not well-tested and may encounter problems. In particular, non-network plugins (e.g. USB DMX) will
-fail to function. For show-critical uses, consider using a Linux system, such as a [Raspberry Pi](ola_on_raspberry_pi).
+OLA is not presently available directly on Windows. However, it can be used with a shim. Note these installations are
+not well-tested and may encounter problems. In particular, non-network plugins (e.g. USB DMX) will fail to function. For
+show-critical uses, consider using a Linux system, such as a [Raspberry Pi](ola_on_raspberry_pi).
 
 Windows Subsystem for Linux (WSL) allows running programs written for Linux (such as OLA) on Windows. WSL requires
-recent versions of Windows 10.
+Windows 10 version 1903 or newer. See Microsoft's notes on Windows
+versions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-2---check-requirements-for-running-wsl-2).
 
 Setup
 =====
