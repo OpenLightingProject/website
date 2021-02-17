@@ -1,9 +1,24 @@
 Compiling From Source
 =====================
 
-OLA source code lives on [GitHub](https://github.com/OpenLightingProject/ola).
-Stable releases are available from the [releases page](https://github.com/OpenLightingProject/ola/releases);
-for bleeding-edge development releases, run `git clone https://github.com/OpenLightingProject/ola.git`.
+OLA developers recommend using the latest [pre-built packages](download_and_install). Compile from source if a release
+is not available for your system, you wish to try bleeding-edge features, or want to contribute to development.
+
+**Before compiling and installing from source, be sure to remove any pre-packaged OLA installations, as they will likely
+conflict.**
+
+If you're testing development releases and find an issue, please report it on
+the [issue tracker](https://github.com/OpenLightingProject/ola/issues).
+
+OLA source code lives on [GitHub](https://github.com/OpenLightingProject/ola). Stable releases are available from
+the [releases page](https://github.com/OpenLightingProject/ola/releases); this is what you want if compiling only
+because OLA is not packaged on your system. For the latest code,
+run `git clone https://github.com/OpenLightingProject/ola.git`.
+
+OLA uses `MAJOR.MINOR.PATCH` branches. The latest development happens on the `master` branch. Features and fixes under
+testing are in the minor branch (i.e. `0.x`). Release candidates are on the patch branch (i.e. `0.10.x`). Checkout your
+preferred level of stability with `git checkout <branch>` or a final release with `git checkout tags/<release>`. If
+you're a developer, always work against the `master` branch. See `README.developer` for more developer advice.
 
 Dependencies
 ============
