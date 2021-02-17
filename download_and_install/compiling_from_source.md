@@ -185,12 +185,17 @@ If this is the first time compiling with this download, generate the build syste
 
     autoreconf -i
 
-OLA uses autotools for building. Run
+OLA uses autotools for building. Run `./configure --help` to see all options.
 
-     ./configure --help
+If building OLA for a specific purpose, or on a low-power system such as a Raspberry Pi, consider
+using `--disable-all-plugins` and enabling only the specific plugins you plan on using. For example:
 
-to see all options. The most popular option is `--enable-python-libs` to build the Python client module. If you want to
-use the RDM responder tests, add `--enable-rdm-tests`.
+    ./configure --disable-all-plugins --enable-e131 --enable-osc
+
+will build only the E1.31 (sACN) and OSC plugins, saving significant build time.
+
+Other popular options are `--enable-python-libs` for using the Python client library, or `--enable-rdm-tests` for the
+RDM responder tests.
 
 Once you’ve decided on the options, it’s time to build OLA.
 
@@ -203,14 +208,12 @@ Mac users should use `make -j$(sysctl -n hw.logicalcpu)` instead of `make -j$(np
 
 Finally, run `sudo ldconfig` to make new libraries available.
 
-Device drivers
-==============
+Device configuration
+====================
 
-Note that, for some devices, it is necessary to install drivers for OLA to work with them. For example, the
-[Open DMX USB](http://opendmx.net/index.php/Open_DMX_USB "Open DMX USB") device needs an additional kernel module that
-could be built using the instructions on
-[LLA\_and\_Q\_Light\_Controller\_Ubuntu\_Tutorial](http://opendmx.net/index.php/LLA_and_Q_Light_Controller_Ubuntu_Tutorial)
-. For other devices, refer to the corresponding device page on the wiki.
+Some devices (particularly those that connect via USB) require specific configuration to function.
+See [here](https://www.openlighting.org/ola/getting-started/device-specific-configuration/) for instructions on
+configuration common devices.
 
 Known Issues
 ============
@@ -238,9 +241,7 @@ If you should get the following error try to fix it with one of
     Rpc.pb.cc: In copy constructor 'ola::rpc::RpcMessage::RpcMessage(const ola::rpc::RpcMessage&)': 
     Rpc.pb.cc:143: error: base class 'class google::protobuf::Message' should be explicitly initialized in the copy constructor
 
-You should be able to prevent this
-by [editing `./src/Makefile.am`](https://groups.google.com/group/open-lighting/msg/c6d86d03dd74ed5b), removing `-Werror`
-and then start from the autoreconfig step again.
+try using the `--disable-fatal-warnings` option.
 
 If you get
 
@@ -255,11 +256,7 @@ If you get
     ./common/rdm/Pids.pb.h:19:2: error: #error regenerate this file with a newer version of protoc.
      #error regenerate this file with a newer version of protoc.
 
-Then you should run
-
-    make clean
-
-to clean out the old protobuf files.
+Then you should run `make clean to clean out the old protobuf files.
 
 Optional
 ========
@@ -270,8 +267,8 @@ Doxygen Documentation
 There is also an option to build the doxygen documentation! To do so, you will need to install
 [doxygen](http://www.doxygen.nl/manual/install.html) (available from package managers on all popular systems).
 
-Once you have installed Doxygen you may need to run `./configure` in your ola directory, so that it can generate the
-correct make file. To build the docs just use:
+Once you have installed Doxygen you may need to run `./configure` in your source directory to generate the correct
+makefile. To build the docs just use:
 
      make doxygen-doc
 
