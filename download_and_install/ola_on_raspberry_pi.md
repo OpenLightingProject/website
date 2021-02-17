@@ -16,7 +16,8 @@ See the official [setup guide](https://www.raspberrypi.org/documentation/setup/)
 - A monitor is not strictly required to use OLA, but one can be helpful for debugging purposes.
 - If you plan on using a USB DMX interface that does not use its own power supply, you will also need a powered USB hub.
   The Raspberry Pi hardware cannot supply enough power over USB to meet the needs of most USB DMX interfaces.
-- A wired network connection is required when using OLA with any network protocols. Remember, DMX over WiFi is not Wireless DMX!
+- A wired network connection is strongly recommended when using OLA with any network protocols. Remember, DMX over WiFi
+  is not Wireless DMX!
 
 Installation
 =============
