@@ -158,7 +158,7 @@ Once you’ve decided on the options, it’s time to build OLA.
     make check
     sudo make install
 
-Mac users should run use `make -j$(sysctl -n hw.logicalcpu)` instead of `make -j$(nproc)`.
+Mac users should use `make -j$(sysctl -n hw.logicalcpu)` instead of `make -j$(nproc)`.
 
 Finally, run `sudo ldconfig` to make new libraries available.
 
