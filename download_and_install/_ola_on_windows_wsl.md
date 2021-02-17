@@ -45,7 +45,7 @@ Create a PowerShell script somewhere on your system with these contents:
     #[Ports]
     
     #All the ports you want to forward separated by comma
-    $ports=@(9090);
+    $ports=@(9090, 9099);
     
     
     #[Static ip]
@@ -99,6 +99,7 @@ Here are some common standard ports:
 | Plugin            | Port       |
 |-------------------|------------|
 | OLA Web interface | 9090       |
+| OLA RDM tests     | 9099       |
 | ArtNet            | 6454       |
 | E1.31 (sACN)      | 5568-5569  |
 | Enttec ESP Net    | 3333       |
