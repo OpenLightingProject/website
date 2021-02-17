@@ -8,9 +8,7 @@ for bleeding-edge development releases, run `git clone https://github.com/OpenLi
 Dependencies
 ============
 
-You need a couple of libraries installed for everything to work correctly.
-
-First you’ll need at least the following:
+OLA depends on the following third-party libraries:
 
 - [avahi](https://www.avahi.org) if you want to use network discovery.
 - [microhttpd](https://www.gnu.org/software/libmicrohttpd/) (if you want the web UI).
@@ -29,7 +27,7 @@ First you’ll need at least the following:
 - yacc (or bison)
 - zlib
 
-The Python library also requires
+The Python library also requires:
 
 - Numpy
 - Protobuf for Python
@@ -131,11 +129,39 @@ Python dependencies
 
 If you wish to build the Python library, additional libraries are required:
 
+### From apt (preferred on Debian/Ubuntu)
+
+    sudo apt-get install \
+        python3-numpy \
+        python3-protobuf
+
+### From dnf (preferred on CentOS/RHEL/Fedora)
+
+    sudo dnf install \
+        python3-numpy \
+        python3-protobuf
+
+### From MacPorts
+
+    sudo port install \
+        py-numpy \
+        py-protobuf3
+
+### From Homebrew
+
+    brew install \
+        numpy \
+        protobuf
+
+The `protobuf` package from Homebrew installs both the C++ and Python Protobuf components.
+
+### From pip
+
     pip3 install --user \
         numpy \
         protobuf
 
-If the pip3 command does not exist, install python3-pip from your package manager and try again.
+Note that there are known problems with the client library on Ubuntu when using libraries from pip.
 
 Build
 =====
