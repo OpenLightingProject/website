@@ -56,6 +56,7 @@ Debian/Ubuntu users can install all dependencies with:
         libtool \
         libusb-1.0.0-dev \
         make \
+        protobuf-compiler \
         pkg-config \
         uuid-dev \
         zlib1g-dev
