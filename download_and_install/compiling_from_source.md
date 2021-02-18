@@ -273,8 +273,8 @@ makefile. To build the docs just use:
 
      make doxygen-doc
 
-You’ll have to run a webserver to get the experience. A simple way to do this is to navigate to `open-lighting/html` and
-run:
+You’ll have to run a webserver to get the experience. A simple way to do this is to navigate to `html` in your source
+directory and run:
 
      python3 -m http.server 8000 --bind 127.0.0.1
 
