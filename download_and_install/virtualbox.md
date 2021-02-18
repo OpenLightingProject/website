@@ -99,14 +99,17 @@ Troubleshooting
 No plugins
 ----------
 
-If your system is too nice, OLA may start before the network is available. You'll know this has happened when the
+If your system is too fast, OLA may start before the network is available. You'll know this has happened when the
 "Primary IP" is `0.0.0.0` and very few plugins are available:
 
 ![](images/virtualbox_13.png)
 
 ![](images/virtualbox_14.png)
 
-There is a simple fix. Log in and run:
+There is a simple fix - just click "Reload Plugins" on the main page. Now, adding/editing universes will show all
+available plugins, although the displayed network information wil be out of date.
+
+If you need to know the new network information, log in and run:
 
     su
     systemctl restart olad
