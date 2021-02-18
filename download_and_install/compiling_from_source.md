@@ -16,9 +16,10 @@ because OLA is not packaged on your system. For the latest code,
 run `git clone https://github.com/OpenLightingProject/ola.git`.
 
 OLA uses `MAJOR.MINOR.PATCH` branches. The latest development happens on the `master` branch. Features and fixes under
-testing are in the minor branch (i.e. `0.x`). Release candidates are on the patch branch (i.e. `0.10.x`). Checkout your
-preferred level of stability with `git checkout <branch>` or a final release with `git checkout tags/<release>`. If
-you're a developer, always work against the `master` branch. See `README.developer` for more developer advice.
+testing are in the minor branch (i.e. `0.x`). Releases are on the patch branch (i.e. `0.10.x`). Checkout your preferred
+level of stability with `git checkout <branch>` or a final release with `git checkout tags/<release>`. If you're a
+developer, work against the `master` branch for new features, or the relevant minor branch for bug fixes.
+See `README.developer` for more developer advice.
 
 Dependencies
 ============
@@ -208,12 +209,12 @@ Mac users should use `make -j$(sysctl -n hw.logicalcpu)` instead of `make -j$(np
 
 Finally, run `sudo ldconfig` to make new libraries available.
 
-Device configuration
+Device Configuration
 ====================
 
 Some devices (particularly those that connect via USB) require specific configuration to function.
 See [here](https://www.openlighting.org/ola/getting-started/device-specific-configuration/) for instructions on
-configuration common devices.
+configuring common devices.
 
 Known Issues
 ============
@@ -256,7 +257,7 @@ If you get
     ./common/rdm/Pids.pb.h:19:2: error: #error regenerate this file with a newer version of protoc.
      #error regenerate this file with a newer version of protoc.
 
-Then you should run `make clean to clean out the old protobuf files.
+Then you should run `make clean` to clean out the old protobuf files.
 
 Optional
 ========
